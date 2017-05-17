@@ -1,0 +1,36 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active:
+    - local      
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.jdbc.Driver   
+    url: jdbc:mysql://localhost:3306/test_db?useUnicode=true&characterEncoding=utf8&useSSL=true
+    username: root
+    password: 1234
+    tomcat:
+      jmx-enabled: false
+    hikari:
+      maximum-pool-size: 10
+      max-lifetime: 30  
+  jpa:
+#    hibernate:
+#      ddl-auto: update
+    show-sql: true 
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp    
+  redis:
+    host: 192.168.0.46
+    port: 6379
+
+logging:
+  file: D:/logs/spring-redis-example.log
+  pattern:
+    file: D:/logs/spring-redis-example.%d{yyyy-MM-dd}.log  
+
+
