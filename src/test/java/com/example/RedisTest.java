@@ -18,7 +18,7 @@ public class RedisTest {
 	
 	@Test
 	public void 레디스_테스트_기록() {
-		valusOps.set("spring:redis:hello", "Hello, Spring Redis");
+		valusOps.set("spring:redis:hello", "Hello, Spring Redis");		
 	}
 	
 	@Test
