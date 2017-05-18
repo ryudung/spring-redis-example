@@ -11,8 +11,6 @@ spring:
     url: jdbc:mysql://localhost:3306/test_db?useUnicode=true&characterEncoding=utf8&useSSL=true
     username: root
     password: 1234
-    tomcat:
-      jmx-enabled: false
     hikari:
       maximum-pool-size: 10
       max-lifetime: 30  
